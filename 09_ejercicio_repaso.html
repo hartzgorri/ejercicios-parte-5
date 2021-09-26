@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        * Crear un array vacío. Pedir al usuario 3 veces que escriba un string. Guardar cada uno de esos strings en la posición 0 , 1 y 2.
+        * Mostrar en pantalla en el orden: primero posición 1, después posición 2 y por último posición 0.
+        * Pista:
+        * Puedes utilizar un bucle para ir pedir una palabra al usuario e introducirlo en cada una de las posiciones del array.
+        */
+    let lista = [];
+        for(let i = 0; i < 3; i++){
+        if(i < 1){
+            prompt1 = prompt("Escriba una lista:");
+        }else if(i < 2){
+            prompt2 = prompt("Escriba una lista:");
+        }else if(i < 3){
+            prompt3 = prompt("Escriba una lista:");
+        }
+    }lista[0] = prompt1; 
+    lista[1] = prompt2;
+    lista[2] = prompt3;
+    console.log(lista[1]);
+    console.log(lista[2]); 
+    console.log(lista[0]);  
+    </script>
+</body>
+
+</html>

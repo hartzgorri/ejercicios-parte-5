@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        * Crear un array de 11 ints. Pedir al usuario que introduzca valores entre 0 y 10. Cada vez que introduzca un dígito, añadir uno al valor en esa posición del array.
+        * Si por ejemplo introduce un 3, sumar uno a la posición 3. Mostrar en pantalla los valores. Si introduce un número mayor que 10, decir que ese número es incorrecto.
+        * Si introduce un número negativo, mostrar en pantalla el número de cada posición y el valor que contiene. Por ejemplo, si introduce 7, 7, 7, 5, 6, 5, 9, 9, 10, -1 mostrar:
+        * 0
+        * 1	0
+        * 2	0
+        * 3	0
+        * 4	0
+        * 5	2
+        * 6	1
+        * 7	3
+        * 9	2
+        * 10 1
+        */
+        lista = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        let pos0 = lista[0];
+        let pos1 = lista[1];
+        let pos2 = lista[2];
+        let pos3 = lista[3];
+        let pos4 = lista[4];
+        let pos5 = lista[5];
+        let pos6 = lista[6];
+        let pos7 = lista[7];
+        let pos8 = lista[8];
+        let pos9 = lista[9];
+        let pos10 = lista[10];
+        for(i = 0; i < lista.length; i++) {
+            nb = parseInt(prompt("Introduzca un valor del 0 al 10:"));
+            if(nb < 0){
+                console.log(pos0 + " " + lista[0]);
+                console.log(pos1 + " " + lista[1]);
+                console.log(pos2 + " " + lista[2]);
+                console.log(pos3 + " " + lista[3]);
+                console.log(pos4 + " " + lista[4]);
+                console.log(pos5 + " " + lista[5]);
+                console.log(pos6 + " " + lista[6]);
+                console.log(pos7 + " " + lista[7]);
+                console.log(pos8 + " " + lista[8]);
+                console.log(pos9 + " " + lista[9]);
+                console.log(pos10 + " " + lista[10]);
+            }else if(nb <= 10){
+                lista[nb] += nb;
+                console.log(lista);
+            }else{
+                console.log("El número introducido es incorrecto.");
+            }
+        }
+    </script>
+</body>
+
+</html>
